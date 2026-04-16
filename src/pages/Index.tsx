@@ -256,7 +256,7 @@ const Index = () => {
   };
 
   const catalog = [
-    { icon: "Flame", name: "Гриль-зоны", desc: "Комплексные зоны отдыха с мангалом, печью и перголой из кованого металла", price: "от 85 000 ₽", tag: "Хит" },
+    { icon: "Flame", name: "Гриль-зоны", desc: "Комплексные зоны отдыха с мангалом, печью и перголой из толстостенной стали", price: "от 85 000 ₽", tag: "Хит" },
     { icon: "Fence", name: "Ворота и заборы", desc: "Распашные, откатные ворота. Заборы под ключ с установкой", price: "от 32 000 ₽", tag: "" },
     { icon: "Home", name: "Беседки", desc: "Металлические беседки с крышей, остеклением, отоплением", price: "от 120 000 ₽", tag: "Новинка" },
     { icon: "Utensils", name: "Мангалы", desc: "Стационарные и переносные мангалы из толстостенной стали 6–8 мм", price: "от 18 000 ₽", tag: "" },
@@ -368,10 +368,10 @@ const Index = () => {
             </div>
 
             <h1 className="animate-fade-in-up delay-100 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-2">
-              <span className="metal-shimmer">КОВАНЫЙ</span>
+              <span className="metal-shimmer">СТАЛЬНЫЕ</span>
             </h1>
             <h1 className="animate-fade-in-up delay-200 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-2">
-              <span className="text-[hsl(25,90%,52%)] fire-text-glow">МЕТАЛЛ</span>
+              <span className="text-[hsl(25,90%,52%)] fire-text-glow">КОНСТРУКЦИИ</span>
             </h1>
             <h1 className="animate-fade-in-up delay-300 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-8">
               <span className="text-foreground">ДЛЯ ЖИЗНИ</span>
@@ -540,7 +540,7 @@ const Index = () => {
             <div>
               <div className="text-[10px] text-[hsl(25,90%,52%)] font-['Oswald'] uppercase tracking-[0.3em] mb-3">// 02 О компании</div>
               <h2 className="font-['Oswald'] text-4xl md:text-5xl font-bold uppercase mb-6">
-                Ковали металл<br /><span className="text-[hsl(25,90%,52%)]">с 2012 года</span>
+                Работаем с металлом<br /><span className="text-[hsl(25,90%,52%)]">с 2012 года</span>
               </h2>
               <p className="text-[hsl(30,10%,58%)] leading-relaxed mb-5">
                 Мы — производственная компания полного цикла. Всё от замера до монтажа делаем своими руками на собственном заводе площадью 3 000 м² в Москве.
