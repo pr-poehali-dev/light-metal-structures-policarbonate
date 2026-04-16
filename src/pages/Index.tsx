@@ -38,16 +38,16 @@ const GrillVisualizer = () => {
   const [showFire, setShowFire] = useState(true);
 
   const zones = [
-    { id: "classic", label: "Классика", desc: "Гриль + мангал" },
-    { id: "premium", label: "Премиум", desc: "Беседка + печь" },
-    { id: "loft", label: "Loft", desc: "Индустриальный стиль" },
+    { id: "classic", label: "Гриль-зона", desc: "Стол + мангал + навес" },
+    { id: "premium", label: "Купольная", desc: "Беседка-купол с остеклением" },
+    { id: "loft", label: "Бассейн", desc: "Телескопический навес" },
   ];
 
   const elements = [
-    { id: "grill", label: "Мангал" },
-    { id: "pergola", label: "Перголa" },
+    { id: "grill", label: "Гриль-стол" },
+    { id: "pergola", label: "Навес" },
     { id: "table", label: "Стол" },
-    { id: "firepit", label: "Костровище" },
+    { id: "firepit", label: "Огонь" },
     { id: "sink", label: "Мойка" },
     { id: "shelves", label: "Полки" },
   ];
@@ -256,12 +256,12 @@ const Index = () => {
   };
 
   const catalog = [
-    { icon: "Flame", name: "Гриль-зоны", desc: "Комплексные зоны отдыха с мангалом, печью и перголой из толстостенной стали", price: "от 85 000 ₽", tag: "Хит" },
-    { icon: "Fence", name: "Ворота и заборы", desc: "Распашные, откатные ворота. Заборы под ключ с установкой", price: "от 32 000 ₽", tag: "" },
-    { icon: "Home", name: "Беседки", desc: "Металлические беседки с крышей, остеклением, отоплением", price: "от 120 000 ₽", tag: "Новинка" },
-    { icon: "Utensils", name: "Мангалы", desc: "Стационарные и переносные мангалы из толстостенной стали 6–8 мм", price: "от 18 000 ₽", tag: "" },
-    { icon: "Building2", name: "Козырьки", desc: "Навесы и козырьки над входом, парковкой, террасой", price: "от 45 000 ₽", tag: "" },
-    { icon: "Zap", name: "Лестницы", desc: "Металлические лестницы с деревом, нержавейкой, стеклом", price: "от 95 000 ₽", tag: "" },
+    { icon: "Dome", name: "Купольные беседки", desc: "Беседки и павильоны купольной формы — стильно, просторно, всесезонно. Под ключ с остеклением и монтажом", price: "от 180 000 ₽", tag: "Хит" },
+    { icon: "Tent", name: "Навесы и шатры", desc: "Металлические навесы и шатровые конструкции для дачи, кафе, рынков. Быстрый монтаж", price: "от 55 000 ₽", tag: "" },
+    { icon: "Waves", name: "Навесы для бассейнов", desc: "Телескопические прозрачные навесы — раздвигаются вручную или автоматически, защищают воду круглый год", price: "от 320 000 ₽", tag: "Новинка" },
+    { icon: "PanelLeftOpen", name: "Раздвижные навесы", desc: "Раздвижные навесы для террас и веранд — открывайте небо одним движением", price: "от 95 000 ₽", tag: "" },
+    { icon: "Utensils", name: "Гриль-столы", desc: "Функциональные гриль-столы из нержавейки и стали для домашней и профессиональной кухни на улице", price: "от 28 000 ₽", tag: "" },
+    { icon: "Flame", name: "Гриль-зоны", desc: "Комплексные уличные зоны для готовки и отдыха: печь, мангал, стол, навес — всё в одном проекте", price: "от 120 000 ₽", tag: "" },
   ];
 
   const services = [
@@ -364,21 +364,21 @@ const Index = () => {
           <div>
             <div className="animate-fade-in-up inline-flex items-center gap-2 text-[10px] text-[hsl(25,90%,52%)] font-['Oswald'] uppercase tracking-[0.3em] mb-6 border border-[hsl(25,90%,52%)]/30 px-3 py-1.5">
               <div className="w-1.5 h-1.5 bg-[hsl(25,90%,52%)] rounded-full animate-pulse" />
-              Металл. Огонь. Качество
+              Навесы. Беседки. Гриль-зоны
             </div>
 
             <h1 className="animate-fade-in-up delay-100 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-2">
-              <span className="metal-shimmer">СТАЛЬНЫЕ</span>
+              <span className="metal-shimmer">КУПОЛА,</span>
             </h1>
             <h1 className="animate-fade-in-up delay-200 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-2">
-              <span className="text-[hsl(25,90%,52%)] fire-text-glow">КОНСТРУКЦИИ</span>
+              <span className="text-[hsl(25,90%,52%)] fire-text-glow">НАВЕСЫ,</span>
             </h1>
             <h1 className="animate-fade-in-up delay-300 font-['Oswald'] text-5xl md:text-7xl font-bold uppercase leading-none mb-8">
-              <span className="text-foreground">ДЛЯ ЖИЗНИ</span>
+              <span className="text-foreground">ГРИЛЬ-ЗОНЫ</span>
             </h1>
 
             <p className="animate-fade-in-up delay-400 text-[hsl(30,10%,60%)] text-lg leading-relaxed mb-10 max-w-md">
-              Гриль-зоны, ворота, беседки и металлоконструкции под ключ. Производство в Москве. Доставка и монтаж по всей области.
+              Купольные беседки и павильоны, телескопические навесы для бассейнов, раздвижные навесы для террас, гриль-столы и гриль-зоны. Под ключ с доставкой и монтажом.
             </p>
 
             <div className="animate-fade-in-up delay-500 flex flex-col sm:flex-row gap-3">
@@ -454,7 +454,7 @@ const Index = () => {
                 Наши <span className="text-[hsl(25,90%,52%)]">изделия</span>
               </h2>
             </div>
-            <p className="text-[hsl(30,10%,55%)] max-w-xs text-sm">Всё производится на собственном заводе из металла толщиной 4–12 мм</p>
+            <p className="text-[hsl(30,10%,55%)] max-w-xs text-sm">Купольные беседки, телескопические навесы, гриль-зоны — всё под ключ</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -498,8 +498,8 @@ const Index = () => {
             <div>
               <div className="text-[10px] text-[hsl(25,90%,52%)] font-['Oswald'] uppercase tracking-[0.3em] mb-3">// Визуализатор</div>
               <h2 className="font-['Oswald'] text-4xl md:text-5xl font-bold uppercase mb-6">
-                3D конструктор<br />
-                <span className="text-[hsl(25,90%,52%)]">гриль-зоны</span>
+                Конструктор<br />
+                <span className="text-[hsl(25,90%,52%)]">вашего проекта</span>
               </h2>
               <p className="text-[hsl(30,10%,55%)] leading-relaxed mb-6">
                 Соберите свою идеальную зону отдыха. Выберите тип, добавьте элементы — и получите расчёт стоимости.
@@ -540,10 +540,10 @@ const Index = () => {
             <div>
               <div className="text-[10px] text-[hsl(25,90%,52%)] font-['Oswald'] uppercase tracking-[0.3em] mb-3">// 02 О компании</div>
               <h2 className="font-['Oswald'] text-4xl md:text-5xl font-bold uppercase mb-6">
-                Работаем с металлом<br /><span className="text-[hsl(25,90%,52%)]">с 2012 года</span>
+                Создаём пространства<br /><span className="text-[hsl(25,90%,52%)]">с 2012 года</span>
               </h2>
               <p className="text-[hsl(30,10%,58%)] leading-relaxed mb-5">
-                Мы — производственная компания полного цикла. Всё от замера до монтажа делаем своими руками на собственном заводе площадью 3 000 м² в Москве.
+                Мы — производственная компания полного цикла. Проектируем и строим купольные беседки, навесы для бассейнов и террас, гриль-зоны под ключ. Собственный завод площадью 3 000 м² в Москве.
               </p>
               <p className="text-[hsl(30,10%,58%)] leading-relaxed mb-8">
                 Наши мастера — это сварщики с разрядом 5–6, работающие в профессии более 15 лет. Используем только сертифицированный российский металл.
