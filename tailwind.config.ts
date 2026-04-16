@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1776335390367576508.html"
 	],
 	prefix: "",
 	theme: {
@@ -86,9 +87,13 @@ export default {
 					}
 				}
 			},
+			fontFamily: {
+				'oswald': ['Oswald', 'sans-serif'],
+				'ibm': ['IBM Plex Sans', 'sans-serif'],
+			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
 			}
 		}
 	},
